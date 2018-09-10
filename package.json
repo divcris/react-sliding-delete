@@ -1,10 +1,8 @@
 {
   "name": "react-sliding-delete",
-  "version": "1.0.0",
-  "description": "for h5 sliding delete",
+  "version": "1.1.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --progress",
     "watch": "webpack --watch --progress"
   },
@@ -13,25 +11,20 @@
     "url": "git+https://github.com/huangjian008/react-sliding-delete.git"
   },
   "author": "huangjian",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/huangjian008/react-sliding-delete/issues"
   },
   "homepage": "https://github.com/huangjian008/react-sliding-delete#readme",
-  "dependencies": {
+  "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "classnames": "^2.2.6",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.11",
     "react": "^16.2.0",
     "style-loader": "^0.20.3",
     "webpack": "^4.2.0",
     "webpack-cli": "^2.0.12"
-  },
-  "devDependencies": {
-    "babel-core": "^6.26.3"
   }
 }
