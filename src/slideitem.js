@@ -29,7 +29,7 @@ function hasClass(element, cls) {
     return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
 }
 
-// // 抛出删除事件， 可供调用者在自己的逻辑中取调用
+// 抛出删除事件， 可供调用者在自己的逻辑中取调用
 export const defaultAction = e => {
     let container = e.target.parentNode.parentNode;
     container.removeChild(container.children[myself]);
