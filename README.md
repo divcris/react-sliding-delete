@@ -2,8 +2,9 @@
 用于h5移动端滑动删除
 
 # Installation
-  npm install react-sliding-delete --save
-  import {defaultAction,RSDelete, loadTouchEvent } from 'react-sliding-delete';
+npm install react-sliding-delete --save
+
+import {defaultAction,RSDelete, loadTouchEvent } from 'react-sliding-delete';
   
 # Usage
 ```javascript
