@@ -1,0 +1,34 @@
+.item-container {
+    width: 100%;
+    height: 2rem;
+    color: white;
+    position: relative;
+}
+.labelAClass {
+    height: 99%;
+    color: white;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.default-del {
+    width: 120px;
+    background: red;
+    right: 0;
+    position: absolute;
+}
+.labelAClass-0 {
+    position: absolute;
+    right: 120px;
+    width: 120px;
+    background: red;
+}
+.labelAClass-1 {
+    position: absolute;
+    right: 240px;
+    width: 80px;
+    background: blue;
+}
