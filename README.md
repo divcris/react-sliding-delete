@@ -3,7 +3,7 @@
 
 # Installation
   npm install react-sliding-delete --save
-  npm i
+  import {defaultAction,RSDelete, loadTouchEvent } from 'react-sliding-delete';
   
 # Usage
 ```javascript
