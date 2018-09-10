@@ -25,7 +25,7 @@
   
   render(){
     return (
-      <div>
+      <div className='item-contaienr'>
           {data.map((item, index)=>{
             return <RSDelete defaultAction={defaultAction} action={[this.firstAction]} rightBtn={[{text:'del','width':'100'},{text:'更多','width':'50'}]} delClass={'del-class'} class={'test'}>
               <p className='bbbbb slider-content'>11111</p>
@@ -34,7 +34,20 @@
         </div>
     )
   }
-  
-  }
-
+}
 ```
+
+# 说明
+  1、组件必须包含在一个容器里面，类似于例子中ClassName为item-container的容器
+  2、要传入可删除组件的dom 类似于例子中的p标签，请加上类名是独一无二的，类似于例子汇总的'bbbbb'，方便在组件内拿到避免出错
+  3、组件默认有删除按钮，如果想在删除按钮前面加入其他类型的按钮，可以传入rightBtn参数，然后传入对应的点击方法
+  4、默认删除按钮的事件是defaultAction，组件库暴露出来给使用者直接使用，但是也可以自己传入默认删除按钮的点击事件，或者使用自己的删除方法。
+    ```javascript
+      // 抛出删除事件， 可供调用者在自己的逻辑中取调用
+      export const defaultAction = e => {
+          let container = e.target.parentNode.parentNode;
+          container.removeChild(container.children[myself]);
+      }
+    ```
+
+# Installation
