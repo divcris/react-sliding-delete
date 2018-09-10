@@ -26,7 +26,7 @@ import {defaultAction,RSDelete, loadTouchEvent } from 'react-sliding-delete';
   
   render(){
     return (
-      <div className='item-contaienr'>
+      <div className='main-contaienr'>
           {data.map((item, index)=>{
             return <RSDelete defaultAction={defaultAction} action={[this.firstAction]} rightBtn={[{text:'del','width':'100'},{text:'更多','width':'50'}]} delClass={'del-class'} class={'test'}>
               <p className='bbbbb slider-content'>11111</p>
@@ -40,7 +40,7 @@ import {defaultAction,RSDelete, loadTouchEvent } from 'react-sliding-delete';
 
 
 ## 说明
-  1、组件必须包含在一个容器里面，类似于例子中ClassName为item-container的容器
+  1、组件必须包含在一个容器里面，类似于例子中ClassName为main-container的容器
   
   2、要传入可滑动组件的dom 类似于例子中的p标签，请加上类名是独一无二的，类似于例子中的'bbbbb'，方便在组件内拿到和区分
   
