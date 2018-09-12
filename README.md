@@ -37,7 +37,14 @@ import {defaultAction,RSDelete, loadTouchEvent } from 'react-sliding-delete';
   }
 }
 ```
-
+``` javascript
+.bbbbb {
+  width: 100%;
+  height: 100%;
+  background: #1a1a1a;
+  position: relative;
+} 
+```
 
 ## 说明
   1、组件必须包含在一个容器里面，类似于例子中ClassName为main-container的容器
