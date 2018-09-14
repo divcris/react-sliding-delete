@@ -56,4 +56,5 @@ import {defaultAction,RSDelete, loadTouchEvent } from 'react-sliding-delete';
   4、默认删除按钮的事件是defaultAction，组件库暴露出来给使用者直接使用，但是也可以自己传入默认删除按钮的点击事件，或者使用自己的删除方法。
   
   5、loadTouchEvent事件必须在dom节点渲染完以后进行绑定和调用。就如例子componentDidMount方法中进行调用或者请求数据回来以后状态值更改稳定后再进行调用
+  
   6、rightBtn属性是必传，可以传入一个空数组
